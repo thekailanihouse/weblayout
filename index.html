@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .flex-container {
+        display: flex;
+        flex-wrap: unwrap;
+        background-color: DodgerBlue;
+        }
+        .flex-container > div {
+        background-color: #f1f1f1;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
         *{
             box-sizing: border-box;
         }
@@ -35,10 +48,10 @@
 <body>
     <header><H1>iNI ADALAH HEADER "WINANTI PUSPITA SARI"</H1></header>
     <nav><h1>ini adalah navigasi</h1></nav>
-    <div class="grid">
-    <aside><h1>ini adalah sidebar</h1></aside>
-    <section><h1>ini adalah content</h1></section>
-    </div>
+    <div class="flex-container">
+        <div class="sidebar">ini Sidebar</div>
+        <div class="section">ini section</div>
+      </div>
     <footer><h1>ini adalah footer</h1></footer>
 </body>
 </html>
