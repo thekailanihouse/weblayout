@@ -1,18 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    footer{
-        background-color: pink ;
-        text-align: center;
-        font-style: italic;
-    }
-    </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		div {
+			display: flex;
+		}
+
+		aside {
+			background-color: pink;
+			flex: 1;
+			order: 1;
+			margin-right: 20px;
+		}
+
+		section {
+			background-color: pink;
+			flex: 3;
+			order: 2;
+		}
+	</style>
 </head>
 <body>
-    <footer><h1>FOOTER "Swandaru Aji Satrio"</h1></footer>
+    <div>
+    	<aside><h1>Ini adalah sidebar "LAILA"</h1></aside>
+    	<section><h1>Ini adalah content "LAILA"</h1></section>
+    </div>
 </body>
 </html>
